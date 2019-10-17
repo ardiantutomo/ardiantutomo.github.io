@@ -3,16 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ardiant Utomo Portofolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="index.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
 <body>
-    <div class="jumbotron text-center vertical-center">
+    <div class="jumbotron hello text-center vertical-center full-page" id="home">
         <div class="container text-white">
             <h3> Hello, </h3>
+            <h1> I'm Ardiant Utomo </h1>
+            <h2>I'm
+                <span
+                    class="txt-rotate"
+                    data-period="1000"
+                    data-rotate='["Indonesian." , "a backend developer.", "a simple person.", "a hard worker person."]'></span>
+            </h2>
+            <div class="arrow-button">
+                <a href="#about">
+                    <div class="arrow border-white"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron text-center full-page bg-white" id="about">
+        <div class="container">
+            <h3><u>About me</u></h3>
+            <div class="row">
+                <div class="col-md">
+                    <img src="avatar.jpg" alt="Avatar" class="avatar">
+                </div>
+                <div class="col-md-9 text-justify">
+                    <p>
+                        I'm Ardiant Utomo, From Tangerang, Banten, Indonesia.
+                        I'm an Operation System and Development in Laboratory Center at Alam Sutera.
+                    </p>
+                </div>
+            </div>
+            <div style="margin: 100px;">
+                <h3><u>Competences</u></h3>
+                <div class="text-justify">
+                    HTML
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>  
+                </div> 
+                <br>
+                <div class="text-justify">
+                    PHP
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>  
+                </div>   
+                <br>
+                <div class="text-justify">
+                    CSS
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>  
+                </div>   
+                <br>
+                <div class="text-justify">
+                    Javascript
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>  
+                </div>   
+                <br>
+                <div class="text-justify">
+                    Python
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>  
+                </div>   
+            </div>
+            <div class="arrow-button">
+                <a href="#experiences">
+                    <div class="arrow border-black"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron text-center full-page" id="experiences">
+        <div class="container">
+            <h3> -Experiences- </h3>
             <h1> I'm Ardiant Utomo </h1>
             <h2>I'm
                 <span
