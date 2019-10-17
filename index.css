@@ -1,0 +1,18 @@
+body {
+    font-family: 'Poppins';font-size: 22px;
+}
+
+h1{
+    font-size: 84px;
+}
+
+.jumbotron{
+    height: 100vh;
+}
+
+.vertical-center {
+    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
