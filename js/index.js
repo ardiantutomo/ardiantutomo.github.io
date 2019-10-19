@@ -1,1 +1,68 @@
-var _0x9062=['isDeleting','prototype','tick','loopNum','length','innerHTML','<span\x20class=\x22wrap\x22>','</span>','random','onload','getElementsByClassName','txt-rotate','getAttribute','data-rotate','data-period','parse','createElement','style','type','text/css','.txt-rotate\x20>\x20.wrap\x20{\x20border-right:\x200.08em\x20solid\x20#666\x20}','body','load','.se-pre-con','slow','.skillbar','each','find','.skillbar-bar','animate','attr','data-percent','toRotate','period','txt'];(function(_0x4324be,_0x217947){var _0x20da4c=function(_0x4866b5){while(--_0x4866b5){_0x4324be['push'](_0x4324be['shift']());}};_0x20da4c(++_0x217947);}(_0x9062,0x1e7));var _0x38a0=function(_0x35ae75,_0x186353){_0x35ae75=_0x35ae75-0x0;var _0x4961f2=_0x9062[_0x35ae75];return _0x4961f2;};var TxtRotate=function(_0x208c19,_0xd4a2d5,_0x3a7b60){this[_0x38a0('0x0')]=_0xd4a2d5;this['el']=_0x208c19;this['loopNum']=0x0;this[_0x38a0('0x1')]=parseInt(_0x3a7b60,0xa)||0x7d0;this[_0x38a0('0x2')]='';this['tick']();this[_0x38a0('0x3')]=![];};TxtRotate[_0x38a0('0x4')][_0x38a0('0x5')]=function(){var _0xc3f919=this[_0x38a0('0x6')]%this['toRotate'][_0x38a0('0x7')];var _0x47965e=this[_0x38a0('0x0')][_0xc3f919];if(this[_0x38a0('0x3')]){this['txt']=_0x47965e['substring'](0x0,this[_0x38a0('0x2')]['length']-0x1);}else{this[_0x38a0('0x2')]=_0x47965e['substring'](0x0,this[_0x38a0('0x2')][_0x38a0('0x7')]+0x1);}this['el'][_0x38a0('0x8')]=_0x38a0('0x9')+this[_0x38a0('0x2')]+_0x38a0('0xa');var _0x282493=this;var _0x4918c4=0x12c-Math[_0x38a0('0xb')]()*0x64;if(this[_0x38a0('0x3')]){_0x4918c4/=0x2;}if(!this[_0x38a0('0x3')]&&this[_0x38a0('0x2')]===_0x47965e){_0x4918c4=this[_0x38a0('0x1')];this[_0x38a0('0x3')]=!![];}else if(this[_0x38a0('0x3')]&&this[_0x38a0('0x2')]===''){this[_0x38a0('0x3')]=![];this[_0x38a0('0x6')]++;_0x4918c4=0x1f4;}setTimeout(function(){_0x282493[_0x38a0('0x5')]();},_0x4918c4);};window[_0x38a0('0xc')]=function(){var _0x1841dc=document[_0x38a0('0xd')](_0x38a0('0xe'));for(var _0x1d24f1=0x0;_0x1d24f1<_0x1841dc[_0x38a0('0x7')];_0x1d24f1++){var _0x326cbb=_0x1841dc[_0x1d24f1][_0x38a0('0xf')](_0x38a0('0x10'));var _0x45c328=_0x1841dc[_0x1d24f1]['getAttribute'](_0x38a0('0x11'));if(_0x326cbb){new TxtRotate(_0x1841dc[_0x1d24f1],JSON[_0x38a0('0x12')](_0x326cbb),_0x45c328);}}var _0x3f3094=document[_0x38a0('0x13')](_0x38a0('0x14'));_0x3f3094[_0x38a0('0x15')]=_0x38a0('0x16');_0x3f3094[_0x38a0('0x8')]=_0x38a0('0x17');document[_0x38a0('0x18')]['appendChild'](_0x3f3094);};$(window)['on'](_0x38a0('0x19'),function(){$(_0x38a0('0x1a'))['fadeOut'](_0x38a0('0x1b'));$(_0x38a0('0x1c'))[_0x38a0('0x1d')](function(){$(this)[_0x38a0('0x1e')](_0x38a0('0x1f'))[_0x38a0('0x20')]({'width':$(this)[_0x38a0('0x21')](_0x38a0('0x22'))},0x1770);});});
+var TxtRotate = function(el, toRotate, period) {
+    this.toRotate = toRotate;
+    this.el = el;
+    this.loopNum = 0;
+    this.period = parseInt(period, 10) || 2000;
+    this.txt = '';
+    this.tick();
+    this.isDeleting = false;
+  };
+  
+  TxtRotate.prototype.tick = function() {
+    var i = this.loopNum % this.toRotate.length;
+    var fullTxt = this.toRotate[i];
+  
+    if (this.isDeleting) {
+      this.txt = fullTxt.substring(0, this.txt.length - 1);
+    } else {
+      this.txt = fullTxt.substring(0, this.txt.length + 1);
+    }
+  
+    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+  
+    var that = this;
+    var delta = 300 - Math.random() * 100;
+  
+    if (this.isDeleting) { delta /= 2; }
+  
+    if (!this.isDeleting && this.txt === fullTxt) {
+      delta = this.period;
+      this.isDeleting = true;
+    } else if (this.isDeleting && this.txt === '') {
+      this.isDeleting = false;
+      this.loopNum++;
+      delta = 500;
+    }
+  
+    setTimeout(function() {
+      that.tick();
+    }, delta);
+  };
+  
+  window.onload = function() {
+    var elements = document.getElementsByClassName('txt-rotate');
+    for (var i=0; i<elements.length; i++) {
+      var toRotate = elements[i].getAttribute('data-rotate');
+      var period = elements[i].getAttribute('data-period');
+      if (toRotate) {
+        new TxtRotate(elements[i], JSON.parse(toRotate), period);
+      }
+    }
+    // INJECT CSS
+    var css = document.createElement("style");
+    css.type = "text/css";
+    css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+    document.body.appendChild(css);
+  };
+
+//skill bar
+
+
+$(document).ready(function() {
+    $(".se-pre-con").fadeOut("slow");
+    $('.skillbar').each(function(){
+      $(this).find('.skillbar-bar').animate({
+        width:$(this).attr('data-percent')
+      },6000);
+    });
+});
