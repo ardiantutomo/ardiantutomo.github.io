@@ -55,7 +55,14 @@ var TxtRotate = function(el, toRotate, period) {
     document.body.appendChild(css);
   };
 
-  
-  $(window).on('load', function() {
+//skill bar
+
+
+$(window).on('load', function() {
     $(".se-pre-con").fadeOut("slow");
+    $('.skillbar').each(function(){
+      $(this).find('.skillbar-bar').animate({
+        width:$(this).attr('data-percent')
+      },6000);
+    });
 });
