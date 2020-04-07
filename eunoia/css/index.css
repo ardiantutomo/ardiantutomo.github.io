@@ -127,11 +127,11 @@
 	z-index: 1;
 	position: relative;
 	display: grid;
-	grid-template-columns: 26% 74%;
+	grid-template-columns: 35% 65%;
 }
 
 .women>div {
-	padding: 2em 3em;
+	padding: 1em 1em;
 	padding-right: 15em;
 	text-align: left;
 	background-color: #ce9d9b;
