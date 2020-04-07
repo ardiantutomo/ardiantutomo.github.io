@@ -1,0 +1,98 @@
+@font-face {
+	font-family: CormorantGaramond;
+	src: url('../fonts/CormorantGaramond-Medium.ttf');
+}
+
+@font-face {
+	font-family: CormorantGaramondBold;
+	src: url('../fonts/CormorantGaramond-Bold.ttf');
+}
+
+@font-face {
+	font-family: CormorantGaramondBold;
+	src: url('../fonts/CormorantGaramond-Bold.ttf');
+}
+
+@font-face {
+	font-family: CormorantGaramondItalic;
+	src: url('../fonts/CormorantGaramond-BoldItalic.ttf');
+}
+
+.default {
+	font-family: 'CormorantGaramondBold', sans-serif;
+	font-size: 17px;
+	color: #511617;
+	line-height: 25px;
+}
+
+.bold {
+	font-family: 'CormorantGaramondBold', sans-serif;
+}
+
+.italic {
+	font-family: 'CormorantGaramondItalic', sans-serif;
+}
+
+.big {
+	font-size: 200px !important;
+}
+
+.medium {
+	font-size: 30px !important;
+	line-height: 30px;
+}
+
+a {
+	font-family: 'CormorantGaramondBold', sans-serif;
+	font-size: 20px;
+	color: #511617;
+	line-height: 25px;
+}
+
+p {
+	font-family: 'CormorantGaramondBold', sans-serif;
+	font-size: 20px;
+	color: #7A4834;
+	line-height: 25px;
+}
+
+h1 {
+	font-family: 'CormorantGaramondBold', sans-serif;
+	font-size: 100px;
+	color: #511617;
+	line-height: 90px;
+	font-weight: 500;
+}
+
+h2 {
+	font-family: 'CormorantGaramondBold', sans-serif;
+	font-size: 50px;
+	color: #511617;
+	line-height: 50px;
+	font-weight: 400;
+	padding-top: 20px;
+}
+
+h3 {
+	font-family: 'CormorantGaramond', sans-serif;
+	font-size: 20px;
+	color: #511617;
+	line-height: 30px;
+	font-weight: 500;
+	padding-top: 20px;
+}
+
+.yellow {
+	color: rgb(139, 104, 14);
+}
+
+@media (max-width: 886px) {
+	h1 {
+		font-size: 35px;
+		line-height: 30px;
+	}
+	h2 {
+		font-size: 25px;
+		line-height: 30px;
+	}
+}
