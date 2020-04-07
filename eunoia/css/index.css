@@ -1,1 +1,275 @@
+.header {
+	width: 100%;
+	height: 100%;
+	background-image: url("../images/bg.jpg");
+	background-size: cover;
+}
 
+.header-content {
+	padding: 15rem 1rem;
+}
+
+#our-mission-learn-more {
+	text-decoration: none;
+	border-bottom: 3px solid #D28929;
+}
+
+#our-mission-learn-more:hover {
+	border-bottom: 3px solid #511617;
+}
+
+.read-more {
+	text-decoration: none;
+	border-bottom: 3px solid #D28929;
+	color: #2F5277;
+}
+
+.read-more:hover {
+	border-bottom: 3px solid #2F5277;
+}
+
+#pipe {
+	cursor: default;
+	color: #511617 !important;
+}
+
+#pipe:hover {
+	color: #511617 !important;
+}
+
+.secondary-title {
+	color: rgb(107, 50, 32);
+}
+
+.sub-content {
+	padding: 1em 1em;
+}
+
+.content {
+	padding: 3rem 10rem;
+	padding-bottom: 4em;
+}
+
+.changes {
+	background-color: #f9e0d7;
+}
+
+#changes-1 {
+	padding: 20px 100px;
+	padding-right: 400px !important;
+}
+
+#changes-2 {
+	padding: 1px 100px !important;
+	padding-left: 400px !important;
+}
+
+#changes-image-1 {
+	float: right;
+	height: 400px;
+	width: 300px;
+}
+
+#changes-image-2 {
+	margin-top: -2em;
+	height: 400px;
+	width: 300px;
+}
+
+.movement-image {
+	height: 717;
+	width: 576;
+}
+
+#mission {
+	margin: -10em auto;
+	padding-top: 80px;
+}
+
+.changes-image {
+	margin-bottom: -11em;
+	margin-top: -1em;
+	padding-top: 80px;
+}
+
+.changes-content {
+	background-color: #F9F6F4;
+	margin: auto;
+	width: 100%;
+	padding-top: 100px !important;
+}
+
+.image-responsive {
+	display: none;
+}
+
+.image-responsive-reverse {
+	display: block;
+}
+
+#women-1 {
+	display: grid;
+}
+
+#women-2 {
+	display: none;
+}
+
+#women-3 {
+	display: none;
+}
+
+.movement {
+	background: linear-gradient(90deg, #E1B3B1 70%, #f9f6f4 30%);
+}
+
+.women {
+	z-index: 1;
+	position: relative;
+	display: grid;
+	grid-template-columns: 35% 65%;
+}
+
+.women>div {
+	padding: 1em 1em;
+	padding-right: 15em;
+	text-align: left;
+	background-color: #ce9d9b;
+	font-size: 30px;
+}
+
+.dot {
+	height: 13px;
+	width: 13px;
+	background-color: #D28929;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.big-dot {
+	height: 35px;
+	width: 35px;
+	background-color: #D28929;
+	border-radius: 50%;
+	display: inline-block;
+}
+#violence-against-women{
+	margin-left: 2.4em;
+}
+.changes-content>div>div {
+	border-left: solid #D28929 3px;
+	padding: 25px 50px;
+}
+
+.row {
+	z-index: 1 !important;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
+
+.column {
+	flex: 30%;
+	max-width: 30%;
+	padding: 0 4px;
+}
+
+.column img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.column-6 {
+	z-index: 1 !important;
+	flex: 16.667%;
+	padding: 0 0;
+	margin: 0 0;
+	max-width: 16.667%;
+}
+
+.column-6 img {
+	vertical-align: middle;
+	width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+	.column,
+	.column-6 {
+		flex: 100%;
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.movement {
+		background: #E1B3B1;
+	}
+	.women {
+		z-index: 1;
+		position: relative;
+		display: block;
+  }
+  
+  #women-1 {
+    display: block;
+  }
+
+  #women-2 {
+    display: none;
+  }
+
+  #women-3 {
+    display: none;
+  }
+	.women>div {
+		padding: 1em 1em;
+		text-align: left;
+		background-color: #ce9d9b;
+		font-size: 20px;
+	}
+	.image-responsive {
+		display: block;
+	}
+	.image-responsive-reverse {
+		display: none;
+	}
+	.changes-content>div>div {
+		margin-bottom: 1rem;
+	}
+	.column,
+	.column-6 {
+		flex: 50%;
+		max-width: 50%;
+	}
+	.changes-image {
+		margin: 0 auto;
+	}
+	#changes-image-1,
+	#changes-image-2 {
+		margin: 0 0;
+		height: 300px;
+		width: 200px;
+	}
+	#changes-1,
+	#changes-2 {
+		padding: 0px 0px !important;
+	}
+	#mission {
+		padding-top: 0;
+		margin: 0 0;
+	}
+	.movement-image {
+		height: 239px;
+		width: 192px;
+	}
+	.content {
+		padding: 30px 10px;
+	}
+	.header-content {
+		padding: 10rem 2rem;
+	}
+	.sub-content {
+		padding: 10px 10px !important;
+	}
+}
