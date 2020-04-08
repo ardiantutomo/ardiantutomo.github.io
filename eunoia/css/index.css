@@ -65,7 +65,6 @@
 }
 
 #changes-image-1 {
-	float: right;
 	height: 400px;
 	width: 300px;
 }
@@ -96,6 +95,7 @@
 	background-color: #F9F6F4;
 	margin: auto;
 	width: 100%;
+	padding:3rem 6rem;
 	padding-top: 100px !important;
 }
 
@@ -156,9 +156,12 @@
 #violence-against-women{
 	margin-left: 2.4em;
 }
-.changes-content>div>div {
+.changes-content > div > div > h2{
+	padding-top: 0px !important;
+}
+.changes-content > div > div {
 	border-left: solid #D28929 3px;
-	padding: 25px 50px;
+	padding: 0px 50px;
 }
 
 .row {
@@ -193,6 +196,13 @@
 	width: 100%;
 }
 
+.main-title{
+	line-height: 130px;
+}
+
+#overview{
+	padding:40px;
+}
 @media screen and (max-width: 600px) {
 	.column,
 	.column-6 {
@@ -202,8 +212,17 @@
 }
 
 @media screen and (max-width: 800px) {
-	.movement {
-		background: #E1B3B1;
+	#pipe,#search-icon {
+		display: none;
+	}
+	hr{
+		border: 1px solid #000;
+	}
+	#overview{
+		padding:5px;
+	}
+	.main-title{
+		line-height: 60px;
 	}
 	.women {
 		z-index: 1;
@@ -234,6 +253,16 @@
 	.image-responsive-reverse {
 		display: none;
 	}
+	
+	#violence-against-women{
+		margin-left: 0em;
+	}
+	.changes-content {
+		margin: auto;
+		width: 100%;
+		padding: 2rem 0rem;
+		padding-top: 20px !important;
+	}
 	.changes-content>div>div {
 		margin-bottom: 1rem;
 	}
@@ -245,15 +274,26 @@
 	.changes-image {
 		margin: 0 auto;
 	}
-	#changes-image-1,
+	#changes-image-1{
+		margin-right: 5px;
+		height: 200px;
+		width: 160px;
+	}
+
 	#changes-image-2 {
-		margin: 0 0;
-		height: 300px;
-		width: 200px;
+		margin-top: 0px;
+		height: 200px;
+		width: 160px;
 	}
 	#changes-1,
 	#changes-2 {
 		padding: 0px 0px !important;
+	}
+	#changes-1{
+		margin-right:50px;
+	}
+	#changes-2{
+		margin-left:50px;
 	}
 	#mission {
 		padding-top: 0;
@@ -266,8 +306,15 @@
 	.content {
 		padding: 30px 10px;
 	}
+	.header {
+		width: 100%;
+		height: 100%;
+		background-position: 10% 100%;
+		background-image: url("../images/bg.jpg");
+		background-size: cover;
+	}
 	.header-content {
-		padding: 10rem 2rem;
+		padding: 15rem 1rem;
 	}
 	.sub-content {
 		padding: 10px 10px !important;
