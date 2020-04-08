@@ -23,6 +23,11 @@
 	text-decoration: none;
 }
 
+.navbar a.search {
+	float: right;
+	display: none;
+}
+
 .navbar-right {
 	float: right;
 }
@@ -178,8 +183,17 @@ i {
 }
 
 @media screen and (max-width:1366px) {
-	.right-side-title,
-	.left-side-title,
+	.right-side-title {
+		transform: rotate(0deg);
+		text-align: right;
+		width: 100%;
+	}
+	.left-side-title{
+		transform: rotate(0deg);
+		text-align: right;
+		width: 100%;
+
+	}
 	.right-side-title-women {
 		display: none;
 	}
@@ -192,7 +206,7 @@ i {
 	}
 
 	.right-side-title-women {
-		transform: rotate(90deg) translate(0.5em, -4.7em);
+		transform: rotate(90deg) translate(0.5em, -4.6em);
 	}
 
 }
@@ -211,6 +225,20 @@ input[type=text] {
 }
 
 @media screen and (max-width: 800px) {
+	
+.changes-image{
+	z-index: 1;
+	position: relative;
+	display: grid !important;
+	grid-template-columns: 50% 50%;
+}
+
+.grid-container-2 {
+	z-index: 1;
+	position: relative;
+	display: block;
+}
+
 	.grid-container-3>.footer,
 	.grid-container-3>.footer>h3 {
 		padding: 0px;
@@ -239,23 +267,33 @@ input[type=text] {
 	.grid-container,
 	.grid-container-3 {
 		display: block;
+		width: 100%;
 	}
 	.navbar a:not(:first-child),
 	.dropdown .dropbtn,
 	.donate-button {
 		display: none;
 	}
+	.navbar a.search {
+		float: right;
+		display: block;
+	}
 	.navbar a.icon {
 		float: right;
 		display: block;
 	}
 	.navbar.responsive {
-		background-color: #5a5223;
+		background-color: #dabca7;
 	}
 	.navbar.responsive a.icon {
 		position: absolute;
 		right: 0;
 		top: 0;
+	}
+	
+	.navbar.responsive a.search {
+		float: right;
+		display: none;
 	}
 	.navbar.responsive a {
 		float: none;
@@ -276,7 +314,7 @@ input[type=text] {
 	}
 	.navbar.navbar.responsive .donate-button {
 		display: block;
-		width: 100%;
+		width: 90%;
 	}
 	.navbar-right {
 		float: none;
