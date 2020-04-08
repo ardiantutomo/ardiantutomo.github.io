@@ -1,333 +1,315 @@
-.header {
+html { 
+    scroll-behavior: smooth; 
+} 
+
+body {
+    font-family: 'Poppins';font-size: 22px;
+}
+
+h1{
+    font-size: 84px;
+}
+
+.full-page{
+    min-height: 100vh;
+}
+
+.hello{
+    background: url('../images/background.png');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin:0 ;
+    padding: 0;
+}
+.vertical-center {
+    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.arrow-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow {
+    box-sizing: border-box;
+    height: 5vw;
+    width: 5vw;
+    border-style: solid;
+    border-width: 0px 1px 1px 0px;
+    transform: rotate(45deg);
+    transition: border-width 150ms ease-in-out;
+}
+
+.border-white{
+    border-color: white;
+}
+
+.border-black{
+    border-color: black;
+}
+
+.arrow:hover {
+    border-bottom-width: 4px;
+    border-right-width: 4px;
+}
+
+
+
+/* Paste this css to your style sheet file or under head tag */
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
 	width: 100%;
 	height: 100%;
-	background-image: url("../images/bg.jpg");
-	background-size: cover;
+	z-index: 9999;
+	background: url('../images/loading.gif') center no-repeat #fff;
 }
 
-.header-content {
-	padding: 15rem 1rem;
+/* skillbar */
+
+.skillbar {
+    position:relative;
+    display:block;
+    margin-bottom:15px;
+    width:100%;
+    background:#eee;
+    height:35px;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    -webkit-transition:0.4s linear;
+    -moz-transition:0.4s linear;
+    -ms-transition:0.4s linear;
+    -o-transition:0.4s linear;
+    transition:0.4s linear;
+    -webkit-transition-property:width, background-color;
+    -moz-transition-property:width, background-color;
+    -ms-transition-property:width, background-color;
+    -o-transition-property:width, background-color;
+    transition-property:width, background-color;
 }
 
-#our-mission-learn-more {
-	text-decoration: none;
-	border-bottom: 3px solid #D28929;
+.skillbar-title {
+    position:absolute;
+    top:0;
+    left:0;
+    width:110px;
+    font-weight:bold;
+    font-size:13px;
+    color:#ffffff;
+    background:#6adcfa;
+    -webkit-border-top-left-radius:3px;
+    -webkit-border-bottom-left-radius:4px;
+    -moz-border-radius-topleft:3px;
+    -moz-border-radius-bottomleft:3px;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
 }
 
-#our-mission-learn-more:hover {
-	border-bottom: 3px solid #511617;
+.skillbar-title span {
+    display:block;
+    background:rgba(0, 0, 0, 0.1);
+    padding:0 20px;
+    height:35px;
+    line-height:35px;
+    -webkit-border-top-left-radius:3px;
+    -webkit-border-bottom-left-radius:3px;
+    -moz-border-radius-topleft:3px;
+    -moz-border-radius-bottomleft:3px;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
 }
 
-.read-more {
-	text-decoration: none;
-	border-bottom: 3px solid #D28929;
-	color: #2F5277;
+.skillbar-bar {
+    height:35px;
+    width:0px;
+    background:#6adcfa;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
 }
 
-.read-more:hover {
-	border-bottom: 3px solid #2F5277;
+.skill-bar-percent {
+    position:absolute;
+    right:10px;
+    top:0;
+    font-size:11px;
+    height:35px;
+    line-height:35px;
+    color:#ffffff;
+    color:rgba(0, 0, 0, 0.4);
 }
 
-#pipe {
-	cursor: default;
-	color: #511617 !important;
+.biodata-title{
+    font-size: 18px;
+    margin-bottom: 0;
+    font-weight: bold;
 }
 
-#pipe:hover {
-	color: #511617 !important;
+.biodata-content{
+    font-size: 15px;
+    color: rgb(143, 143, 143);
 }
 
-.secondary-title {
-	color: rgb(107, 50, 32);
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.sub-content {
-	padding: 1em 1em;
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+content: '';
+position: absolute;
+width: 6px;
+background-color: rgb(60, 61, 60);
+top: 0;
+bottom: 0;
+left: 50%;
+margin-left: -3px;
 }
 
+/* Container around content */
+.timeline-container {
+padding: 10px 40px;
+position: relative;
+background-color: inherit;
+width: 50%;
+}
+
+/* The circles on the timeline */
+.timeline-container::after {
+content: '';
+position: absolute;
+width: 25px;
+height: 25px;
+right: -17px;
+background-color: rgb(60, 61, 60);
+border: 4px solid rgb(42, 184, 148);
+top: 15px;
+border-radius: 50%;
+z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+left: 0;
+}
+
+/* Place the container to the right */
+.right {
+left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+content: " ";
+height: 0;
+position: absolute;
+top: 22px;
+width: 0;
+z-index: 1;
+right: 30px;
+border: medium solid white;
+border-width: 10px 0 10px 10px;
+border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+content: " ";
+height: 0;
+position: absolute;
+top: 22px;
+width: 0;
+z-index: 1;
+left: 30px;
+border: medium solid white;
+border-width: 10px 10px 10px 0;
+border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+left: -16px;
+}
+
+/* The actual content */
 .content {
-	padding: 3rem 10rem;
-	padding-bottom: 4em;
+padding: 20px 30px;
+background-color: rgb(255, 255, 255);
+position: relative;
+border-radius: 6px;
 }
 
-.changes {
-	background-color: #f9e0d7;
-}
-
-#changes-1 {
-	padding: 20px 100px;
-	padding-right: 400px !important;
-}
-
-#changes-2 {
-	padding: 1px 100px !important;
-	padding-left: 400px !important;
-}
-
-#changes-image-1 {
-	margin-left: 8em;
-	height: 450px;
-	width: 300px;
-}
-
-#changes-image-2 {
-	margin-top: -2em;
-	height: 450px;
-	width: 300px;
-}
-
-#movement-image-1 {
-	height: 717;
-	width: 576;
-}
-#movement-image-2 {
-	height: 717;
-	width: 576;
-}
-
-#mission {
-	margin: -10em auto;
-	padding-top: 80px;
-}
-
-.changes-image {
-	margin-bottom: -11em;
-	margin-top: -1em;
-	padding-top: 80px;
-}
-
-.changes-content {
-	background-color: #F9F6F4;
-	margin: auto;
-	width: 100%;
-	padding:3rem 6rem;
-	padding-top: 100px !important;
-}
-
-.image-responsive {
-	display: none;
-}
-
-.image-responsive-reverse {
-	display: block;
-}
-
-#women-1 {
-	display: grid;
-}
-
-#women-2 {
-	display: none;
-}
-
-#women-3 {
-	display: none;
-}
-
-.movement {
-	background: linear-gradient(90deg, #E1B3B1 70%, #f9f6f4 30%);
-}
-
-.women {
-	z-index: 1;
-	position: relative;
-	display: grid;
-	grid-template-columns: 35% 65%;
-}
-
-.women>div {
-	padding: 1em 1em;
-	padding-right: 15em;
-	text-align: left;
-	background-color: #ce9d9b;
-	font-size: 30px;
-}
-
-.dot {
-	height: 13px;
-	width: 13px;
-	background-color: #D28929;
-	border-radius: 50%;
-	display: inline-block;
-}
-
-.big-dot {
-	height: 35px;
-	width: 35px;
-	background-color: #D28929;
-	border-radius: 50%;
-	display: inline-block;
-}
-#violence-against-women{
-	margin-left: 2.4em;
-}
-.changes-content > div > div > h2{
-	padding-top: 0px !important;
-}
-.changes-content > div > div {
-	border-left: solid #D28929 3px;
-	padding: 0px 50px;
-}
-
-.row {
-	z-index: 1 !important;
-	display: flex;
-	flex-wrap: wrap;
-	padding: 0 4px;
-}
-
-.column {
-	flex: 30%;
-	max-width: 30%;
-	padding: 0 4px;
-}
-
-.column img {
-	margin-top: 8px;
-	vertical-align: middle;
-	width: 100%;
-}
-
-.column-6 {
-	z-index: 1 !important;
-	flex: 16.667%;
-	padding: 0 0;
-	margin: 0 0;
-	max-width: 16.667%;
-}
-
-.column-6 img {
-	vertical-align: middle;
-	width: 100%;
-}
-
-.main-title{
-	line-height: 130px;
-}
-
-#overview{
-	padding:40px;
-	font-size: 20px;
-}
+/* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
-	.column,
-	.column-6 {
-		flex: 100%;
-		max-width: 100%;
-	}
+/* Place the timelime to the left */
+.timeline::after {
+    left: 31px;
 }
 
-@media screen and (max-width: 800px) {
-	#pipe,#search-icon {
-		display: none;
-	}
-	hr{
-		border: 1px solid #000;
-	}
-	#overview{
-		padding:5px;
-	}
-	.main-title{
-		line-height: 60px;
-	}
-	.women {
-		z-index: 1;
-		position: relative;
-		display: block;
-  }
-  
-  #women-1 {
-    display: block;
-  }
+/* Full-width containers */
+.timeline-container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+}
 
-  #women-2 {
-    display: none;
-  }
+/* Make sure that all arrows are pointing leftwards */
+.timeline-container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
 
-  #women-3 {
-    display: none;
-  }
-	.women>div {
-		padding: 1em 1em;
-		text-align: left;
-		background-color: #ce9d9b;
-		font-size: 20px;
-	}
-	.image-responsive {
-		display: block;
-	}
-	.image-responsive-reverse {
-		display: none;
-	}
-	
-	#violence-against-women{
-		margin-left: 0em;
-	}
-	.changes-content {
-		margin: auto;
-		width: 100%;
-		padding: 2rem 0rem;
-		padding-top: 20px !important;
-	}
-	.changes-content>div>div {
-		margin-bottom: 1rem;
-	}
-	.column,
-	.column-6 {
-		flex: 50%;
-		max-width: 50%;
-	}
-	.changes-image {
-		margin: 0 auto;
-	}
-	#changes-image-1{
-		margin-right: 5px;
-		margin-left:0;
-		height: 225px;
-		width: 150px;
-	}
+/* Make sure all circles are at the same spot */
+.left::after, .right::after {
+    left: 15px;
+}
 
-	#changes-image-2 {
-		margin-top: 0px;
-		height: 225px;
-		width: 150px;
-	}
-	#changes-1,
-	#changes-2 {
-		padding: 0px 0px !important;
-	}
-	#changes-1{
-		margin-right:50px;
-	}
-	#changes-2{
-		margin-left:50px;
-	}
-	#mission {
-		padding-top: 0;
-		margin: 0 0;
-	}
-	#movement-image-1 {
-		height: 239px;
-		width: 192px;
-	}
-	#movement-image-2{		
-		height: 275px;
-		width: 244.79px;
-	}
-	.content {
-		padding: 30px 10px;
-	}
-	.header {
-		width: 100%;
-		height: 100%;
-		background-position: 10% 100%;
-		background-image: url("../images/bg.jpg");
-		background-size: cover;
-	}
-	.header-content {
-		padding: 15rem 1rem;
-	}
-	.sub-content {
-		padding: 10px 10px !important;
-	}
+/* Make all right containers behave like the left ones */
+.right {
+    left: 0%;
+}
+}
+#sticky-footer {
+flex-shrink: none;
+}
+
+.space-0{
+    margin:0 ;
+    padding: 0;
+}
+
+.contacts{
+    border: #5f6161 solid;
+    padding: 5px 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+a{
+    color: #ffffff;
 }

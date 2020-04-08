@@ -1,272 +1,156 @@
+<!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>EUNOIA</title>
-      <link rel="stylesheet" href="css/global.css">
-      <link rel="stylesheet" href="css/index.css">
-      <link rel="stylesheet" href="css/typography.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   </head>
-   <body>
-      <div class="header">
-         <div class="navbar" id="nav">
-            <a href="#home" class="title">EUNOIA</a>
-            <div class="navbar-right">
-               <p></p>
-               <a href="#about-us">About us</a>
-               <a href="#contact">Our Programs</a>
-               <div class="dropdown">
-                  <button class="dropbtn default">Our Story
-                  </button>
-                  <div class="dropdown-content">
-                     <a href="#">Violence against Women</a>
-                     <a href="#">Gender Equlity</a>
-                     <a href="#">Economic Empowerment</a>
-                     <a href="#">Health Enhancement</a>
-                  </div>
-               </div>
-               <div class="dropdown">
-                  <button class="dropbtn default">Get Involved
-                  </button>
-                  <div class="dropdown-content">
-                     <a href="#">Volunteer</a>
-                     <a href="#">Take Action</a>
-                  </div>
-               </div>
-               <a href="#contact">News & Events</a>
-               <a href="#" id="search-icon"><i class="fa fa-search" ></i></a>
-               <a id='pipe'>|</a>
-               <a href="#contact">Contact Us</a>
-               <button class="pill-button donate-button">Donate</button>
-               <a href="javascript:void(0);" class="icon" onclick="responsive()">&#9776;</a>
-               <a href="#" class="search"><i class="fa fa-search"></i></a>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ardiant Utomo Portofolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+    <div class="se-pre-con"></div>
+    <div class="jumbotron hello text-center vertical-center full-page" id="home">
+        <div class="container text-white">
+            <h3> Hello, </h3>
+            <h1> I'm Ardiant Utomo </h1>
+            <h2>I'm
+                <span
+                    class="txt-rotate"
+                    data-period="1000"
+                    data-rotate='["Indonesian." , "a backend developer.", "a simple person.", "a hard worker person."]'></span>
+            </h2>
+            <div class="arrow-button">
+                <a href="#about">
+                    <div class="arrow border-white"></div>
+                </a>
             </div>
-         </div>
-         <div class="header-content">
-            <p> Campaign 2018/2019 </p>
-            <h1 class="main-title" style="margin-bottom: 1rem;"> Empowering<br/>Women </h1>
-            <p style="margin-bottom:2em">A world in which women and girls<br/>
-               realize and embrace their rights               
-            </p>
-            <button id="changes-button" class="button">Discover Now</button>
-         </div>
-      </div>
-      <h1 class="right-side-title big">Movement</h1>
-      
-      <div class="content movement">
-         <h2 id="overview">OVERVIEW</h2>
-         <div class="grid-container">
-            <div class="image-container">
-               <img src="images/A4MfBkiTqE2sr8p7LibpTOw5GyxXahIR2w7lTtsO5U4.jpeg" id="movement-image-1" class="movement-image" />
+        </div>
+    </div>
+    <div class="jumbotron text-center full-page bg-white" id="about">
+        <div class="container">
+            <h3><u>About me</u></h3>
+            <div class="row">
+                <div class="col-md">
+                    <img src="images/avatar.jpg" alt="Avatar" class="avatar">
+                </div>
+                <div class="col-md-9 text-justify">
+                    <div class="container">
+                        <p class="biodata-title"><u>FULL NAME:</u></p>
+                        <p class="biodata-content">Ardiant Utomo</p>
+                    </div>
+                    <div class="container">
+                        <p class="biodata-title"><u>PLACE and DATE OF BIRTH:</u></p>
+                        <p class="biodata-content">Jakarta, 2<sup>nd</sup> August 1999</p>
+                    </div>
+                    <div class="container">
+                        <p class="biodata-title"><u>ADDRESS:</u></p>
+                        <p class="biodata-content">Banjar Wijaya Cluster Italy Block B22A/34, Tangerang, Banten, Indonesia</p>
+                    </div>
+                    <div class="container">
+                        <p class="biodata-title"><u>EMAIL:</u></p>
+                        <p class="biodata-content">ardiantutomo@gmail.com</p>
+                    </div>
+                </div>
             </div>
-            <div class="sub-content" style="padding: 2em;margin-bottom: 2rem;">
-               <h2>What<br/>is Eunoia?</h2>
-               <p>Established in 2020, Eunoia is a community of strong, curious, and ambitious women redefining success on our own terms. We are here to inform, entertain, and inspire action through the content and experiences we create. </p>
-               <br/>
-               <p>
-               We also invest in empowering women and girls to realize their full potential, worth and strength politically, socially and economically through advocating for their human and social justice rights.
-               </p>
-            </div>
-         </div>
-         <div class="grid-container" id="mission" style="padding-bottom: 4rem;">
-            <div class="image-container image-responsive">
-               <img src="images/original-2.jpg" style="z-index: 5;" id="movement-image-2" class="movement-image"/>
-            </div>
-            <div  style="margin-top:2em"  class="sub-content">
-               <h2>Our<br/>Mission</h2><br/>
-               <p>
-                  To advance women and girl’s social, economic and civics rights. We exist to redefine success for millennial women by providing the tools and connections they need to own their futures.
-                  </p>
-                  <br/>
-                  <a id="our-mission-learn-more" href="#">Learn more</a>
-             
-              
-            </div>
-            <div class="image-container image-responsive-reverse">
-               <img src="images/original-2.jpg" style="z-index: 5;" id="movement-image-2" class="movement-image"/>
-            </div>
-         </div>
-      </div>
-      <h1 class="left-side-title big">Changes</h1>
-      <div class="content changes" id="changes">
-         <div class="grid-container">
-            <div class="sub-content" id="changes-1">
-               <span class="dot"></span><h3 style="display: inline-block;">&nbsp; Eunoia &nbsp;</h3><span class="dot"></span>
-               <h3 class="bold" style="color:#2F5277">“No matter where you are in life, inspire and empower the women around you. Success is never reached alone. And wisdom and wealth are sweeter when shared”</h3>
-            </div>
-            <div class="sub-content" >                
-            </div>
-         </div>
-         <div class="grid-container" >
-            <div class="sub-content">                
-            </div>
-            <div class="sub-content"  id="changes-2">
-               <p class="bold" style="color: #511617;">Create impact that will transform lives, families and communities around the world.
-               </p>
-            </div>
-         </div>
-         <div class="grid-container-2 changes-image">
-            <div class="sub-content image-container"> 
-               <img src="images/79a2a4a3329d010365798a4fa4bb7d10.jpg" id="changes-image-1"/>               
-            </div>
-            <div class="sub-content image-container">  
-               <img src="images/8e4f5d505eaefbc778d3df1693330242.png" id="changes-image-2"/>                    
-            </div>
-         </div>
-      </div>
-      <div class="content changes-content">
-         <div class="grid-container-3">
-            <div class="sub-content" id="violence-against-women">
-               <h2 class="medium">Violence against<br/>Women</h2>
-               <p style="margin-top:1em">Ending violence against women and girls remains one of the most serious and ongoing challenges worldwide. Eunoia focuses on Elimination of Violence against Women & Girls by facilitating development and enforcement of appropriate mechanisms.</p>
-               <br/>
-               <a class="read-more" href="#">Read more</a>
-            </div>
-            <hr class="image-responsive" style="margin-bottom:20px"/>
-            <div class="sub-content">
-               <h2 class="medium">Gender<br/>Equality</h2>
-               <p style="margin-top:1em">Eunoia understand that gender equality is the key to ending global poverty, and that our mission of empowering the most vulnerable requires putting women and girls at the center of our work. Putting women & girls at the center of community.</p>
-               <br/>
-               <a class="read-more" href="#">Read more</a>
-            </div>
-            <hr class="image-responsive" style="margin-bottom:20px"/>
-            <div class="sub-content">
-               <h2 class="medium">Economic<br/>Empowerment</h2>
-               <p style="margin-top:1em;margin-bottom: 1em;">Women face unprecedented challenges to their livelihoods, identities, and sense of place in the evolving global village. The aim of this program is to strengthen the livelihoods base of women. Enhancing economic opportunities for women through knowledge and skills.</p>
-               <br/>
-               <a class="read-more" href="#">Read more</a>
-            </div>
-         </div>
-      </div>
-      <h1 class="right-side-title-women big">Women</h1>
-      <div class="women" id="women-1">
-         <img src="images/96ead261d08c439cb2c2bdc5a4767d2c.jpeg" style="width: 100%;height:auto"/>
-         <div>
-            <h2>The Moment I Fell In Love With My Natural Hair: 8 Women’s Stories</h2>
-            <h3 style="margin-bottom:1em">“The empowerment itself lies in being able to make a choice.”</h3>
-            <span class="big-dot" style="background-color: #55758f;"></span>
-            <span class="big-dot" style="background-color: #eaeceb;"></span>
-            <span class="big-dot" style="background-color: #552924;"></span>
-            <span class="big-dot" style="background-color: #deaf41;"></span>
-            <div style="margin-top:1em">
-               <button class="button" onclick="showContent(3)" style="min-width: 50px;"><i class="fa fa-arrow-left"></i></button>
-               <button class="button" onclick="showContent(2)" style="min-width: 50px;"><i class="fa fa-arrow-right"></i></button>
-            </div>
-            <div class="image-responsive">      
-               <h3 class="side-line-text"><span style="background:#ce9d9b">women</span></h3>   
-            </div>
-         </div>
-      </div>
-      <div class="women" id="women-2">
-            <img src="images/4ce9a32f3f2da003cff1e378dc7662ff.jpg" style="width: 100%;height:auto"/>
+            <h3 style="margin-top: 100px;"><u>Competences</u></h3>
+            <br>
+            <div class="row">
+                    <div class="skillbar clearfix " data-percent="100%">
+                        <div class="skillbar-title" style="background: #333333;"><span>HTML</span></div>
+                        <div class="skillbar-bar" style="background: #525252;"></div>
+                        <div class="skill-bar-percent">100%</div>
+                    </div>
+                    <div class="skillbar clearfix " data-percent="70%">
+                        <div class="skillbar-title" style="background: #643f1d;"><span>CSS</span></div>
+                        <div class="skillbar-bar" style="background: #ee9f38;"></div>
+                        <div class="skill-bar-percent">70%</div>
+                    </div>
+                    <div class="skillbar clearfix " data-percent="85%">
+                        <div class="skillbar-title" style="background: #558b75;"><span>PHP</span></div>
+                        <div class="skillbar-bar" style="background: #71ce76;"></div>
+                        <div class="skill-bar-percent">85%</div>
+                    </div>
+                    <div class="skillbar clearfix " data-percent="80%">
+                        <div class="skillbar-title" style="background: #24698a;"><span>Node.js</span></div>
+                        <div class="skillbar-bar" style="background: #4caae0;"></div>
+                        <div class="skill-bar-percent">80%</div>
+                    </div>
+                    <div class="skillbar clearfix " data-percent="80%">
+                        <div class="skillbar-title" style="background: #5f6620;"><span>Python</span></div>
+                        <div class="skillbar-bar" style="background: #cde739;"></div>
+                        <div class="skill-bar-percent">80%</div>
+                    </div>
 
-         <div>
-            <h2>The Economic Case For Cancelling All Of The US’ Student Loan Debt</h2>
-            <h3 style="margin-bottom:1em">“Why aren’t we talking more about alternatives to being saddled with crushing student loan debt?”</h3>
-            <span class="big-dot" style="background-color: #f5adcb;"></span>
-            <span class="big-dot" style="background-color: #dfca30;"></span>
-            <span class="big-dot" style="background-color: #f9a41e;"></span>
-            <span class="big-dot" style="background-color: #3e4f82;"></span>
-            <span class="big-dot" style="background-color: #ab1d3b;"></span>
-            <div style="margin-top:1em">
-               <button class="button" onclick="showContent(1)"style="min-width: 50px;"><i class="fa fa-arrow-left"></i></button>
-               <button class="button" onclick="showContent(3)" style="min-width: 50px;"><i class="fa fa-arrow-right"></i></button>
             </div>
-            <div class="image-responsive">      
-               <h3 class="side-line-text"><span style="background:#ce9d9b">women</span></h3>   
+            <div class="arrow-button">
+                <a href="#experiences">
+                    <div class="arrow border-black"></div>
+                </a>
             </div>
-         </div>
-      </div>
-      <div class="women" id="women-3">
-         <img src="images/519x745_0xac120002_8636956141535377642.jpeg" style="width: 100%;height:auto"/>
-         <div>
-            <h2>How To Do Kegel Exercises At Your Desk Right Now… And Why You Should</h2>
-            <h3 style="margin-bottom:1em">It might be one of the easiest ways to improve your sex life. </h3>
-            <span class="big-dot" style="background-color: #d05341;"></span>
-            <span class="big-dot" style="background-color: #9ab9c3;"></span>
-            <span class="big-dot" style="background-color: #e3bd9f;"></span>
-            <div style="margin-top:1em">
-               <button class="button" onclick="showContent(2)" style="min-width: 50px;"><i class="fa fa-arrow-left"></i></button>
-               <button class="button" onclick="showContent(1)" style="min-width: 50px;"><i class="fa fa-arrow-right"></i></button>
+        </div>
+    </div>
+    <div class="jumbotron text-center full-page space-0" id="experiences" style="padding: 50px 0;">
+        <div class="container">
+            <h3> -Experiences- </h3>
+            <br>
+            <div class="timeline">
+                <div class="timeline-container left">
+                    <div class="content">
+                    <h2>September, 2018</h2>
+                    <p>Full Time Laboratory Assistant in Laboratory Center at Alam Sutera</p>
+                    </div>
+                </div>
+                <div class="timeline-container right">
+                    <div class="content">
+                    <h2>October, 2018</h2>
+                    <p>Scholarship Mentor at Binus Alam Sutera</p>
+                    </div>
+                </div>
+                <div class="timeline-container left">
+                    <div class="content">
+                    <h2>October, 2019</h2>
+                    <p>Operation and System Development in Laboratory Center at Alam Sutera</p>
+                    </div>
+                </div>
             </div>
-            <div class="image-responsive">      
-               <h3 class="side-line-text"><span style="background:#ce9d9b">women</span></h3>   
+            
+        </div>
+    </div>
+    <footer id="sticky-footer" class="py-4 text-center" style="background: #494444;color:#fff">
+        <div class="container">
+            <h3> Find me in: </h3>
+            <br>
+            <div class="row">
+                <div class="col-4">
+                    <a href="https://github.com/ardiantutomo" target="_blank">
+                        <img src="images/github.png" alt="https://github.com/ardiantutomo/" width="80px" height="80px" style="margin-right:5px;">
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="https://linkedin.com/in/ardiant-utomo-5a9a5075" target="_blank">
+                        <img src="images/linkedin.png" alt="https://linkedin.com/in/ardiant-utomo-5a9a5075" width="80px" height="80px" style="margin-right:5px;">
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="https://www.instagram.com/__ardiant/" target="_blank">
+                        <img src="images/instagram.png" alt="https://www.instagram.com/__ardiant/" width="80px" height="80px" style="margin-right:5px;">
+                    </a>
+                </div>
             </div>
-         </div>
-      </div>
-      <div class="grid-container-2">
-         <div class="sub-content" style="background-color: rgb(241, 238, 238);">
-            <span class="dot"></span><h3 style="display: inline-block;">&nbsp; Eunoia &nbsp;</h3><span class="dot"></span>
-            <h2 style="margin-bottom:0.5em">Keep in Touch</h2>
-            <p>Subscribe today and stay current on our efforts advance women & girls worldwide! </p>
-            <br/>
-            <button style="background-color: #D28929;" class="button medium-button" style="background-color:rgb(134, 106, 60); color:#fff">Contact us</button>      
-         </div>
-         <div class="sub-content" style="background-color: rgb(251, 230, 230);">
-            <div>
-               <h2 style="margin-bottom: -0.3em;">Ambition begins here </h2>
-               <h3 class="italic">where women support women</h3>
-               <div>
-                  <input type="text" placeholder="Your name" />
-                  <input type="text" placeholder="Email address" />   
-                  <br/>                     
-                  <button style="background-color:#2F5277" id="join-button" class="button medium-button">Join now</button>
-               </div>               
-            </div>
-         </div>
-      </div>
-      <div>
-      <div class="row" style="background-color: #E1B3B1;margin: 0 0;padding: 0 0;padding-bottom:50px">
-      <div class="column-6">
-         <img src="images/797260c0484a4429953fda3076a2baae.jpg" class="margin-30" style="width:100%;">
-      </div>
-      <div class="column-6">
-         <img src="images/de4f09da3bea15abcbd1e8c4ed4e5354.jpg" style="width:100%">
-      </div>
-      <div class="column-6">
-         <img src="images/Marc Jacobs Spring 2018 Beauty 121.jpg" class="margin-30" style="width:100%">
-      </div>
-      <div class="column-6">
-         <img src="images/66201470789992021cc26b5173bbc783.jpg" style="width:100%">
-      </div>
-      <div class="column-6">
-         <img src="images/tumblr_pk3wob4HPC1qe4kjp_1280.jpg" class="margin-30" style="width:100%">
-      </div>
-      <div class="column-6">
-         <img src="images/a1330db8aa40f89a434fb21b33e2f7ac.jpg" style="width:100%">
-      </div>
-      </div>
-      <hr style="border: 1px solid #511617" class="image-responsive-reverse"/>
-      <div class="grid-container-3" style="background-color: #E1B3B1;">
-      <h3 class="side-line-text image-responsive"><span>Eunoia</span></h3>
-         <div class="footer text-center">
-             <p class="bold" id='city'>Jakarta, Indonesia</p>
-         </div>
-         <div class="footer text-center">
-             <h3 class="bold">womenempowering@eunoiacommunity.com</h3>
-         </div>
-         <div class="footer text-center" style="margin: auto auto">        
-               <img src="images/produksi uas-08.png" style="width:12.6px; height: 22.86px; margin: 0 10px;">
-               <img src="images/produksi uas-09.png" style="width:24.03px; height: 24.96px; margin: 0 10px;">
-               <img src="images/produksi uas-10.png" style="width:20.066px; height: 25.2px; margin: 0 10px;">
-               <img src="images/produksi uas-11.png" style="width:28.96px; height: 24.9px; margin: 0 10px;">
-                         
-         </div>
-      </div>
-   <div id="thank-you" class="modal">
-
-      <div class="modal-content text-center" style="background-color: #F9F6F4; ">
-         <div style="background-color: rgb(251, 230, 230); min-height: 10em;">
-         </div>
-         <h2 style="margin-top: -1em;" class="bold">Thank you for joining!</h2>
-         <div style="min-height: 3em; margin-bottom: 100px;">
-            <h3>Create impact that will transform lives, families and communities around the world</h3>
-         </div>
-         <button style="background-color:#2F5277;margin-bottom: 1em;" id="close-button" class="button medium-button">Close</button>
-      </div>
-   
-   </div>
-   </body>
-   <script src="scripts/index.js"></script>
+        </div>
+        <br>
+        <div class="container text-center">
+            <small>Made with ♥ by Ardiant Utomo</small>
+        </div>
+    </footer>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <script src="js/index.js"></script>
+</body>
 </html>
