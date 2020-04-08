@@ -88,11 +88,40 @@ h3 {
 
 @media (max-width: 886px) {
 	h1 {
-		font-size: 35px;
-		line-height: 30px;
+		font-size: 60px;
+		line-height: 60px;
 	}
 	h2 {
-		font-size: 25px;
-		line-height: 30px;
+		font-size: 45px;
+		line-height: 50px;
 	}
+	.big {
+		font-family: 'CormorantGaramondItalic', sans-serif;
+		font-size: 20px !important;
+	}
+	.big:after{
+		content:"\00a0\00a0\00a0\00a0\00a0";
+		text-decoration:line-through;
+	}
+
+	.image-responsive .side-line-text {		
+		color: #e1b3b1;
+		font-family: 'CormorantGaramondItalic', sans-serif;
+		border-bottom: 1px solid #e1b3b1; 
+		font-size: 30px;
+	}
+
+	.side-line-text {
+		width: 100%; 
+		font-family: 'CormorantGaramondBold', sans-serif;
+		text-align: center; 
+		border-bottom: 1px solid #000; 
+		line-height: 0.1em;
+		margin: 0px 0 10px; 
+	 } 
+	 
+	 .side-line-text  span { 
+		 background:#E1B3B1; 
+		 padding:0 10px; 
+	 }
 }
