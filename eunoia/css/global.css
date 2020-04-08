@@ -261,8 +261,10 @@ input[type=text] {
 		margin-top: 0px;
 	}
 	.image-container {
-		text-align: center !important;
 		margin: auto;
+	}
+	.grid-container{
+		padding: 0px 30px;
 	}
 	.grid-container,
 	.grid-container-3 {

@@ -65,17 +65,22 @@
 }
 
 #changes-image-1 {
-	height: 400px;
+	margin-left: 8em;
+	height: 450px;
 	width: 300px;
 }
 
 #changes-image-2 {
 	margin-top: -2em;
-	height: 400px;
+	height: 450px;
 	width: 300px;
 }
 
-.movement-image {
+#movement-image-1 {
+	height: 717;
+	width: 576;
+}
+#movement-image-2 {
 	height: 717;
 	width: 576;
 }
@@ -202,6 +207,7 @@
 
 #overview{
 	padding:40px;
+	font-size: 20px;
 }
 @media screen and (max-width: 600px) {
 	.column,
@@ -276,14 +282,15 @@
 	}
 	#changes-image-1{
 		margin-right: 5px;
-		height: 200px;
-		width: 160px;
+		margin-left:0;
+		height: 225px;
+		width: 150px;
 	}
 
 	#changes-image-2 {
 		margin-top: 0px;
-		height: 200px;
-		width: 160px;
+		height: 225px;
+		width: 150px;
 	}
 	#changes-1,
 	#changes-2 {
@@ -299,9 +306,13 @@
 		padding-top: 0;
 		margin: 0 0;
 	}
-	.movement-image {
+	#movement-image-1 {
 		height: 239px;
 		width: 192px;
+	}
+	#movement-image-2{		
+		height: 275px;
+		width: 244.79px;
 	}
 	.content {
 		padding: 30px 10px;
