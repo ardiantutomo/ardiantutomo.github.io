@@ -2,155 +2,319 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ardiant Utomo Portofolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <meta name="description" content="Ardiant Utomo - Senior Software Engineer & Technical Lead. Building scalable systems with Python, Node.js, Laravel & cloud-native tech.">
+    <title>Ardiant Utomo | Senior Software Engineer & Technical Lead</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
 <body>
-    <div class="se-pre-con"></div>
-    <div class="jumbotron hello text-center vertical-center full-page" id="home">
-        <div class="container text-white">
-            <h3> Hello, </h3>
-            <h1> I'm Ardiant Utomo </h1>
-            <h2>I'm
-                <span
-                    class="txt-rotate"
-                    data-period="1000"
-                    data-rotate='["Indonesian." , "a backend developer.", "a simple person.", "a hard worker person."]'></span>
-            </h2>
-            <div class="arrow-button">
-                <a href="#about">
-                    <div class="arrow border-white"></div>
+    <div class="loader se-pre-con" aria-hidden="true"></div>
+
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav-logo">AU</a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero full-page" id="home">
+            <div class="hero-bg"></div>
+            <div class="hero-content container">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-title">Ardiant Utomo</h1>
+                <p class="hero-role">
+                    <span class="txt-rotate" data-period="2000" data-rotate='["Senior Software Engineer.", "Technical Lead.", "Backend & API builder.", "Team mentor."]'></span>
+                </p>
+                <p class="hero-summary">Building scalable backend systems, mentoring teams, and shipping high-impact products. Python · Node.js · Laravel · AWS · MongoDB.</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-outline">Get in Touch</a>
+                </div>
+                <a href="#about" class="hero-scroll" aria-label="Scroll to about">
+                    <span class="hero-scroll-icon"></span>
                 </a>
             </div>
-        </div>
-    </div>
-    <div class="jumbotron text-center full-page bg-white" id="about">
-        <div class="container">
-            <h3><u>About me</u></h3>
-            <div class="row">
-                <div class="col-md">
-                    <img src="images/avatar.jpg" alt="Avatar" class="avatar">
-                </div>
-                <div class="col-md-9 text-justify">
-                    <div class="container">
-                        <p class="biodata-title"><u>FULL NAME:</u></p>
-                        <p class="biodata-content">Ardiant Utomo</p>
+        </section>
+
+        <section class="section about-section" id="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-image-wrap">
+                        <img src="images/avatar.jpg" alt="Ardiant Utomo" class="about-avatar" width="280" height="280">
                     </div>
-                    <div class="container">
-                        <p class="biodata-title"><u>PLACE and DATE OF BIRTH:</u></p>
-                        <p class="biodata-content">Jakarta, 2<sup>nd</sup> August 1999</p>
-                    </div>
-                    <div class="container">
-                        <p class="biodata-title"><u>ADDRESS:</u></p>
-                        <p class="biodata-content">Banjar Wijaya Cluster Italy Block B22A/34, Tangerang, Banten, Indonesia</p>
-                    </div>
-                    <div class="container">
-                        <p class="biodata-title"><u>EMAIL:</u></p>
-                        <p class="biodata-content">ardiantutomo@gmail.com</p>
+                    <div class="about-content">
+                        <p class="about-lead">Experienced Software Engineer and Technical Leader with a strong track record of driving complex projects from concept to production.</p>
+                        <p>I specialize in building scalable backend systems, mentoring engineering teams, and aligning technical strategy with business goals. My expertise spans Python, Node.js, Laravel, and cloud-native architectures (AWS, MongoDB).</p>
+                        <div class="about-meta">
+                            <p><strong>Location</strong> Tangerang, Indonesia</p>
+                            <p><strong>Email</strong> <a href="mailto:ardiantutomo@gmail.com">ardiantutomo@gmail.com</a></p>
+                            <p><strong>Phone</strong> <a href="tel:082311933139">082311933139</a></p>
+                            <p><strong>Education</strong> B.Sc. Computer Science, Binus University (Magna cum laude, 3.88/4.00)</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <h3 style="margin-top: 100px;"><u>Competences</u></h3>
-            <br>
-            <div class="row">
-                    <div class="skillbar clearfix " data-percent="100%">
-                        <div class="skillbar-title" style="background: #333333;"><span>HTML</span></div>
-                        <div class="skillbar-bar" style="background: #525252;"></div>
-                        <div class="skill-bar-percent">100%</div>
+        </section>
+
+        <section class="section experience-section" id="experience">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div class="timeline">
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">03/2025 – Present</span>
+                            <h3>Fullstack Software Engineer</h3>
+                            <p class="timeline-company">Cinch.sg</p>
+                            <p>B2B service APIs, Sumsub KYC integration, SEO optimization (300% organic traffic increase). Agile/Scrum.</p>
+                        </div>
+                    </article>
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">04/2024 – Present</span>
+                            <h3>Lead Backend Engineer (Part-Time)</h3>
+                            <p class="timeline-company">Langaroo</p>
+                            <p>Led engineering for 800K+ users; 40% reliability improvement, MongoDB optimization, release practices, mentoring.</p>
+                        </div>
+                    </article>
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">01/2024 – 03/2025</span>
+                            <h3>Software Engineer</h3>
+                            <p class="timeline-company">Userdata Sdn. Bhd.</p>
+                            <p>FastAPI integration, MySQL/MongoDB for AI analytics, feature estimation with PM.</p>
+                        </div>
+                    </article>
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">11/2024 – 12/2024</span>
+                            <h3>Software Engineer</h3>
+                            <p class="timeline-company">Beringin Artha Sejahtera</p>
+                            <p>Pawn system app: Next.js frontend, Nest.js backend; client coordination and handover.</p>
+                        </div>
+                    </article>
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">07/2024 – 11/2024</span>
+                            <h3>Backend Developer</h3>
+                            <p class="timeline-company">Love Bonito</p>
+                            <p>Middleware (SAP, Magento, POS), chatbot API, service optimization, unit tests, code reviews.</p>
+                        </div>
+                    </article>
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">07/2023 – 07/2024</span>
+                            <h3>Software Engineer</h3>
+                            <p class="timeline-company">TVS Digital</p>
+                            <p>Fintech solution end-to-end, cross-functional leadership, architecture, mentorship, QA collaboration.</p>
+                        </div>
+                    </article>
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">11/2022 – 07/2023</span>
+                            <h3>Senior Software Development Engineer</h3>
+                            <p class="timeline-company">GDP Labs</p>
+                            <p>Blockchain flight insurance (Node.js, Solidity), ZKP + React, AWS KMS demo, crypto custodian PoC, Polygon ID frontend.</p>
+                        </div>
+                    </article>
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">08/2020 – 11/2021</span>
+                            <h3>Technical Lead</h3>
+                            <p class="timeline-company">PT. Quanta Coretech Indonesia</p>
+                            <p>Led dev projects, scope and timelines, hands-on React.js & Laravel, QA and delivery.</p>
+                        </div>
+                    </article>
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">08/2019 – 08/2021</span>
+                            <h3>Operation and System Development</h3>
+                            <p class="timeline-company">BINUS University (LCAS)</p>
+                            <p>Lab maintenance, borrowing web app (React + Laravel), work management tools (React + Express), lab setup.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section projects-section" id="projects">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <p class="section-subtitle">Selected work from product and client projects</p>
+                <div class="projects-grid">
+                    <article class="project-card" data-tech="Backend,Scale">
+                        <div class="project-image">
+                            <img src="images/projects/langaroo/langaroo1.png" alt="Langaroo" loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <h3>Langaroo</h3>
+                            <p>Backend systems for 800K+ users. MongoDB optimization, release management, 40% reliability improvement.</p>
+                            <ul class="project-tags">
+                                <li>Node.js</li><li>MongoDB</li><li>AWS</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="project-card" data-tech="Video,Transcription">
+                        <div class="project-image">
+                            <img src="images/projects/scribe/scribe1.jpg" alt="Scribe / Lexigo" loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <h3>Scribe (Lexigo)</h3>
+                            <p>Web-based video transcription platform with editing, translation, commenting, and sharing. FFMPEG for media.</p>
+                            <ul class="project-tags">
+                                <li>React</li><li>Laravel</li><li>Python</li><li>FFMPEG</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="project-card" data-tech="Mobile,Government">
+                        <div class="project-image">
+                            <img src="images/projects/sekarmas/sekarmas.jpg" alt="Sekarmas" loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <h3>Sekarmas</h3>
+                            <p>Social media–based mobile app for public participation in monitoring government programs.</p>
+                            <ul class="project-tags">
+                                <li>Flutter</li><li>Laravel</li><li>MySQL</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="project-card" data-tech="Bot,Reporting">
+                        <div class="project-image">
+                            <img src="images/projects/bot-telegram/telegrambot-2.png" alt="Telegram Bot" loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <h3>Telegram Bot</h3>
+                            <p>Field reporting bot with web interface for management. Telegram Bot API integration.</p>
+                            <ul class="project-tags">
+                                <li>Laravel</li><li>Telegram API</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="project-card" data-tech="Lab,Borrowing">
+                        <div class="project-image">
+                            <img src="images/projects/borrowing/borrowing1.png" alt="Laboratory Borrowing" loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <h3>Laboratory Borrowing</h3>
+                            <p>BINUS lab equipment borrowing: browse, request, reserve, track history. React + Laravel.</p>
+                            <ul class="project-tags">
+                                <li>React</li><li>Laravel</li><li>MySQL</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="project-card" data-tech="Fintech">
+                        <div class="project-image">
+                            <img src="images/projects/tvsc/tvsc1.png" alt="TVS Digital" loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <h3>TVS Digital Fintech</h3>
+                            <p>End-to-end fintech solution with cross-functional teams, integration, and QA.</p>
+                            <ul class="project-tags">
+                                <li>Node.js</li><li>React</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="project-card" data-tech="Enterprise">
+                        <div class="project-image">
+                            <img src="images/projects/manucentric/manu1.jpg" alt="Manucentric" loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <h3>Manucentric</h3>
+                            <p>Backend and frontend for enterprise apps. MSSQL, ASP.NET, React.js.</p>
+                            <ul class="project-tags">
+                                <li>ASP.NET</li><li>MSSQL</li><li>React</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section skills-section" id="skills">
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-lead">
+                    <p><strong>Technical:</strong> Next.js, React, Node.js, PHP, Python, MySQL, MongoDB, Solidity</p>
+                    <p><strong>Leadership:</strong> Technical roadmapping, code review & mentorship, cross-functional communication</p>
+                </div>
+                <div class="skills-bars">
+                    <div class="skillbar" data-percent="95%">
+                        <div class="skillbar-title"><span>Next.js / React</span></div>
+                        <div class="skillbar-bar"></div>
+                        <div class="skill-bar-percent">95%</div>
                     </div>
-                    <div class="skillbar clearfix " data-percent="70%">
-                        <div class="skillbar-title" style="background: #643f1d;"><span>CSS</span></div>
-                        <div class="skillbar-bar" style="background: #ee9f38;"></div>
-                        <div class="skill-bar-percent">70%</div>
+                    <div class="skillbar" data-percent="95%">
+                        <div class="skillbar-title"><span>Node.js</span></div>
+                        <div class="skillbar-bar"></div>
+                        <div class="skill-bar-percent">95%</div>
                     </div>
-                    <div class="skillbar clearfix " data-percent="85%">
-                        <div class="skillbar-title" style="background: #558b75;"><span>PHP</span></div>
-                        <div class="skillbar-bar" style="background: #71ce76;"></div>
+                    <div class="skillbar" data-percent="90%">
+                        <div class="skillbar-title"><span>PHP / Laravel</span></div>
+                        <div class="skillbar-bar"></div>
+                        <div class="skill-bar-percent">90%</div>
+                    </div>
+                    <div class="skillbar" data-percent="85%">
+                        <div class="skillbar-title"><span>MySQL / MongoDB</span></div>
+                        <div class="skillbar-bar"></div>
                         <div class="skill-bar-percent">85%</div>
                     </div>
-                    <div class="skillbar clearfix " data-percent="80%">
-                        <div class="skillbar-title" style="background: #24698a;"><span>Node.js</span></div>
-                        <div class="skillbar-bar" style="background: #4caae0;"></div>
-                        <div class="skill-bar-percent">80%</div>
+                    <div class="skillbar" data-percent="75%">
+                        <div class="skillbar-title"><span>Python</span></div>
+                        <div class="skillbar-bar"></div>
+                        <div class="skill-bar-percent">75%</div>
                     </div>
-                    <div class="skillbar clearfix " data-percent="80%">
-                        <div class="skillbar-title" style="background: #5f6620;"><span>Python</span></div>
-                        <div class="skillbar-bar" style="background: #cde739;"></div>
-                        <div class="skill-bar-percent">80%</div>
-                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="contact-lead">Open to collaboration and new opportunities.</p>
+                <div class="contact-links">
+                    <a href="https://github.com/ardiantutomo" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="GitHub">
+                        <img src="images/github.png" alt="" width="48" height="48"> GitHub
+                    </a>
+                    <a href="https://linkedin.com/in/ardiant-utomo-5a9a5075" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="LinkedIn">
+                        <img src="images/linkedin.png" alt="" width="48" height="48"> LinkedIn
+                    </a>
+                    <a href="mailto:ardiantutomo@gmail.com" class="contact-link" aria-label="Email">
+                        <span class="contact-icon-email"></span> Email
+                    </a>
+                </div>
             </div>
-            <div class="arrow-button">
-                <a href="#experiences">
-                    <div class="arrow border-black"></div>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="jumbotron text-center full-page space-0" id="experiences" style="padding: 50px 0;">
+        </section>
+    </main>
+
+    <footer class="footer">
         <div class="container">
-            <h3> -Experiences- </h3>
-            <br>
-            <div class="timeline">
-                <div class="timeline-container left">
-                    <div class="content">
-                    <h2>September, 2018</h2>
-                    <p>Full Time Laboratory Assistant in Laboratory Center at Alam Sutera</p>
-                    </div>
-                </div>
-                <div class="timeline-container right">
-                    <div class="content">
-                    <h2>October, 2018</h2>
-                    <p>Scholarship Mentor at Binus Alam Sutera</p>
-                    </div>
-                </div>
-                <div class="timeline-container left">
-                    <div class="content">
-                    <h2>October, 2019</h2>
-                    <p>Operation and System Development in Laboratory Center at Alam Sutera</p>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-    <footer id="sticky-footer" class="py-4 text-center" style="background: #494444;color:#fff">
-        <div class="container">
-            <h3> Find me in: </h3>
-            <br>
-            <div class="row">
-                <div class="col-4">
-                    <a href="https://github.com/ardiantutomo" target="_blank">
-                        <img src="images/github.png" alt="https://github.com/ardiantutomo/" width="80px" height="80px" style="margin-right:5px;">
-                    </a>
-                </div>
-                <div class="col-4">
-                    <a href="https://linkedin.com/in/ardiant-utomo-5a9a5075" target="_blank">
-                        <img src="images/linkedin.png" alt="https://linkedin.com/in/ardiant-utomo-5a9a5075" width="80px" height="80px" style="margin-right:5px;">
-                    </a>
-                </div>
-                <div class="col-4">
-                    <a href="https://www.instagram.com/__ardiant/" target="_blank">
-                        <img src="images/instagram.png" alt="https://www.instagram.com/__ardiant/" width="80px" height="80px" style="margin-right:5px;">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="container text-center">
-            <small>Made with ♥ by Ardiant Utomo</small>
+            <p>Made with care by Ardiant Utomo</p>
         </div>
     </footer>
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
     <script src="js/index.js"></script>
 </body>
 </html>
